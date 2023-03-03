@@ -1,9 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset';
 
-const GlobalStyle = createGlobalStyle`
-    ${reset};
-    
+const GlobalStyle = createGlobalStyle`    
     *{
         box-sizing:boerder-box;
     }
