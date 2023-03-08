@@ -88,7 +88,7 @@ const Board = () => {
     if (checked.length > 0) {
       axios.delete("boardDelete", {
         params: {
-          boardList: checked.map((item) => item.boardSeq).join("|") + "|",
+          boardSeqStr: checked.map((item) => item.boardSeq).join("|") + "|",
           id: "지으닝",
         },
       });
